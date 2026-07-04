@@ -127,7 +127,7 @@
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
 						<suiteXmlFile>
-							src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+							src/test/resources/testrunners/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
