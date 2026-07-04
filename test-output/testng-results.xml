@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-04T14:23:06 GST" name="Suite" finished-at="2026-07-04T14:27:49 GST" duration-ms="282636">
+  <suite started-at="2026-07-04T18:54:35 GST" name="Suite" finished-at="2026-07-04T19:00:39 GST" duration-ms="364403">
     <groups>
       <group name="extractLastJobs">
         <method signature="JobsSearchPageTest.TBDExcel()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" name="TBDExcel" class="com.qa.LinkedInJob.tests.JobsSearchPageTest"/>
       </group> <!-- extractLastJobs -->
     </groups>
-    <test started-at="2026-07-04T14:23:06 GST" name="JobsSearchPageTest" finished-at="2026-07-04T14:27:49 GST" duration-ms="282636">
+    <test started-at="2026-07-04T18:54:35 GST" name="JobsSearchPageTest" finished-at="2026-07-04T19:00:39 GST" duration-ms="364403">
       <class name="com.qa.LinkedInJob.tests.JobsSearchPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:06 GST" name="setup" finished-at="2026-07-04T14:23:11 GST" duration-ms="5071" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:54:35 GST" name="setup" finished-at="2026-07-04T18:54:40 GST" duration-ms="5281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,15 +21,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="JobsSearchPageSetUp()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:11 GST" name="JobsSearchPageSetUp" finished-at="2026-07-04T14:23:43 GST" duration-ms="32394" status="PASS">
+        <test-method is-config="true" signature="JobsSearchPageSetUp()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:54:40 GST" name="JobsSearchPageSetUp" finished-at="2026-07-04T18:55:22 GST" duration-ms="42648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobsSearchPageSetUp -->
-        <test-method signature="TBD()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:43 GST" name="TBD" finished-at="2026-07-04T14:23:53 GST" duration-ms="9719" status="PASS">
+        <test-method signature="TBD()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:55:23 GST" name="TBD" finished-at="2026-07-04T18:55:30 GST" duration-ms="7123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TBD -->
-        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:53 GST" name="getjobsInformationTest" finished-at="2026-07-04T14:23:53 GST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:55:30 GST" name="getjobsInformationTest" finished-at="2026-07-04T18:55:30 GST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,11 +40,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getjobsInformationTest -->
-        <test-method signature="getJobsSearchPageUrlTest()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:53 GST" name="getJobsSearchPageUrlTest" finished-at="2026-07-04T14:23:54 GST" duration-ms="400" status="PASS">
+        <test-method signature="getJobsSearchPageUrlTest()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:55:30 GST" name="getJobsSearchPageUrlTest" finished-at="2026-07-04T18:55:32 GST" duration-ms="1845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getJobsSearchPageUrlTest -->
-        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:54 GST" name="getjobsInformationTest" finished-at="2026-07-04T14:23:54 GST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:55:32 GST" name="getjobsInformationTest" finished-at="2026-07-04T18:55:32 GST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getjobsInformationTest -->
-        <test-method signature="doSearchTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:23:55 GST" name="doSearchTest" data-provider="getJobDataFromSheet" finished-at="2026-07-04T14:24:00 GST" depends-on-methods="com.qa.LinkedInJob.tests.JobsSearchPageTest.TBD" duration-ms="4969" status="PASS">
+        <test-method signature="doSearchTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:55:35 GST" name="doSearchTest" data-provider="getJobDataFromSheet" finished-at="2026-07-04T18:56:01 GST" depends-on-methods="com.qa.LinkedInJob.tests.JobsSearchPageTest.TBD" duration-ms="26258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSearchTest -->
-        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:24:00 GST" name="getjobsInformationTest" finished-at="2026-07-04T14:26:46 GST" duration-ms="165940" status="PASS">
+        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:56:01 GST" name="getjobsInformationTest" finished-at="2026-07-04T18:59:02 GST" duration-ms="180557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getjobsInformationTest -->
-        <test-method signature="doSearchTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:26:46 GST" name="doSearchTest" data-provider="getJobDataFromSheet" finished-at="2026-07-04T14:26:49 GST" depends-on-methods="com.qa.LinkedInJob.tests.JobsSearchPageTest.TBD" duration-ms="2965" status="PASS">
+        <test-method signature="doSearchTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:59:02 GST" name="doSearchTest" data-provider="getJobDataFromSheet" finished-at="2026-07-04T18:59:11 GST" depends-on-methods="com.qa.LinkedInJob.tests.JobsSearchPageTest.TBD" duration-ms="8576" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSearchTest -->
-        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:26:49 GST" name="getjobsInformationTest" finished-at="2026-07-04T14:27:43 GST" duration-ms="54640" status="PASS">
+        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T18:59:11 GST" name="getjobsInformationTest" finished-at="2026-07-04T19:00:32 GST" duration-ms="81648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,11 +109,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getjobsInformationTest -->
-        <test-method signature="TBDExcel()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:27:43 GST" name="TBDExcel" finished-at="2026-07-04T14:27:45 GST" depends-on-methods="com.qa.LinkedInJob.tests.JobsSearchPageTest.doSearchTest" duration-ms="2091" status="PASS">
+        <test-method signature="TBDExcel()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T19:00:32 GST" name="TBDExcel" finished-at="2026-07-04T19:00:34 GST" depends-on-methods="com.qa.LinkedInJob.tests.JobsSearchPageTest.doSearchTest" duration-ms="2187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TBDExcel -->
-        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:27:45 GST" name="getjobsInformationTest" finished-at="2026-07-04T14:27:45 GST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getjobsInformationTest(java.lang.reflect.Method)[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T19:00:34 GST" name="getjobsInformationTest" finished-at="2026-07-04T19:00:34 GST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,13 +124,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getjobsInformationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T14:27:49 GST" name="tearDown" finished-at="2026-07-04T14:27:49 GST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.LinkedInJob.tests.JobsSearchPageTest@6ed3ccb2]" started-at="2026-07-04T19:00:39 GST" name="tearDown" finished-at="2026-07-04T19:00:39 GST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.LinkedInJob.tests.JobsSearchPageTest -->
       <class name="com.qa.LinkedInJob.tests.JobEmailAlertTest">
-        <test-method signature="TestTBD()[pri:0, instance:com.qa.LinkedInJob.tests.JobEmailAlertTest@7c6908d7]" started-at="2026-07-04T14:27:45 GST" name="TestTBD" depends-on-groups="extractLastJobs" finished-at="2026-07-04T14:27:49 GST" duration-ms="3272" status="PASS">
+        <test-method signature="TestTBD()[pri:0, instance:com.qa.LinkedInJob.tests.JobEmailAlertTest@7c6908d7]" started-at="2026-07-04T19:00:34 GST" name="TestTBD" depends-on-groups="extractLastJobs" finished-at="2026-07-04T19:00:39 GST" duration-ms="4518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestTBD -->
