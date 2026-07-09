@@ -21,7 +21,8 @@ public class ExcelUtils {
 	public static final String TEST_DATA_PATH = "src/test/resources/testdata/";
 
 	public static Object[][] getDataExcludingHeader(String fileName, String sheetName) {
-		String filePath = TEST_DATA_PATH + fileName + ".xlsx";
+		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
+		System.out.println("filePath" + filePath);
 		Object[][] data = null;
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
@@ -44,7 +45,8 @@ public class ExcelUtils {
 	}
 
 	public static void setCellData(String fileName, String sheetName, int rowNum, int cellNum, String data) {
-		String filePath = TEST_DATA_PATH + fileName + ".xlsx";
+		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
+		System.out.println("filePath" + filePath);
 
 		try {
 			File xlFile = new File(filePath);
@@ -88,7 +90,8 @@ public class ExcelUtils {
 	}
 
 	public static int getRowCount(String fileName, String sheetName) {
-		String filePath = TEST_DATA_PATH + fileName + ".xlsx";
+		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
+		System.out.println("filePath" + filePath);
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
 			Sheet sheet = book.getSheet(sheetName);
@@ -124,7 +127,8 @@ public class ExcelUtils {
 	}
 
 	public static Set<String> getUniqueColumnData(String fileName, String sheetName, int columnNum) {
-		String filePath = TEST_DATA_PATH + fileName + ".xlsx";
+		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
+		System.out.println("filePath" + filePath);
 		Set<String> data = new HashSet<>();
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
@@ -155,7 +159,8 @@ public class ExcelUtils {
 	}
 
 	public static List<String> getColumnData(String fileName, String sheetName, int columnNum) {
-		String filePath = TEST_DATA_PATH + fileName + ".xlsx";
+		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
+		System.out.println("filePath" + filePath);
 		List<String> data = new ArrayList<>();
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
@@ -184,7 +189,8 @@ public class ExcelUtils {
 	}
 
 	public static Object[][] getDataFromRowIndex(String fileName, String sheetName, int startRowIndex) {
-		String filePath = TEST_DATA_PATH + fileName + ".xlsx";
+		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
+		System.out.println("filePath" + filePath);
 		Object[][] data = null;
 		int dataRow = 0;
 
@@ -197,7 +203,7 @@ public class ExcelUtils {
 
 			System.out.println(
 					"Total rows: " + sheet.getLastRowNum() + " and columns: " + sheet.getRow(0).getLastCellNum());
-			data = new Object[sheet.getLastRowNum() - startRowIndex+1][sheet.getRow(startRowIndex).getLastCellNum()];
+			data = new Object[sheet.getLastRowNum() - startRowIndex + 1][sheet.getRow(startRowIndex).getLastCellNum()];
 
 			for (int i = startRowIndex; i <= sheet.getLastRowNum(); i++) {
 				Row row = sheet.getRow(i);
