@@ -18,7 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 
-	public static final String TEST_DATA_PATH = "src/test/resources/testdata/";
+	public static final String TEST_DATA_PATH = "/src/test/resources/testdata/";
 
 	public static Object[][] getDataExcludingHeader(String fileName, String sheetName) {
 		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
