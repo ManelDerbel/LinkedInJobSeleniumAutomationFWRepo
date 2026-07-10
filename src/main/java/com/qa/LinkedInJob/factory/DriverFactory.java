@@ -1,8 +1,5 @@
 package com.qa.LinkedInJob.factory;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -57,24 +54,5 @@ public class DriverFactory {
 	
 	public static WebDriver getDriver() {
 		return tlDriver.get();
-	}
-
-	public Properties initProp() {
-		prop = new Properties();
-
-		try {
-			FileInputStream file = new FileInputStream("src/test/resources/config/config.properties");
-
-			try {
-				prop.load(file);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-
-		return prop;
 	}
 }

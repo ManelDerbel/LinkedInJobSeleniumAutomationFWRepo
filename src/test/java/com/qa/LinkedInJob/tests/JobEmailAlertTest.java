@@ -11,10 +11,11 @@ import com.qa.LinkedInJob.utils.StringUtils;
 
 public class JobEmailAlertTest {
 
-	@Test(dependsOnGroups="extractLastJobs")
+	@Test(dependsOnGroups = "extractLastJobs")
 	public void TestTBD() {
 		System.out.println("TestTBD: " + getClass().getSimpleName());
-		List<String> columnData = ExcelUtils.getColumnData("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours", 0);
+		List<String> columnData = ExcelUtils.getColumnData("config", "excel.path",
+				"FinalJobs_Last24Hours", 0);
 		for (String data : columnData) {
 			System.out.println(data);
 		}
@@ -27,7 +28,7 @@ public class JobEmailAlertTest {
 		StringBuilder emailContent = new StringBuilder();
 
 		if (!isLastNoJobs && startRowIndex != -1) {
-			Object[][] dataFromRowIndex = ExcelUtils.getDataFromRowIndex("DailyJobs_UpdatedHourly",
+			Object[][] dataFromRowIndex = ExcelUtils.getDataFromRowIndex("config", "excel.path",
 					"FinalJobs_Last24Hours", startRowIndex);
 			for (int i = 0; i < dataFromRowIndex.length; i++) {
 				emailContent.append(dataFromRowIndex[i][0]).append("\n").append(dataFromRowIndex[i][1]).append("\n");

@@ -16,9 +16,11 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.qa.LinkedInJob.config.ConfigReader;
+
 public class ExcelUtils {
 
-	public static final String TEST_DATA_PATH = "src/test/resources/testdata/";
+	public static final String TEST_DATA_PATH = "/src/test/resources/testdata/";
 
 	public static Object[][] getDataExcludingHeader(String fileName, String sheetName) {
 		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
@@ -44,9 +46,13 @@ public class ExcelUtils {
 		return data;
 	}
 
-	public static void setCellData(String fileName, String sheetName, int rowNum, int cellNum, String data) {
-		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
-		System.out.println("filePath" + filePath);
+	private static String getExcelFilePath(String fileName, String key) {
+		return ConfigReader.getProperty(fileName, key);
+	}
+
+	public static void setCellData(String fileName, String key, String sheetName, int rowNum, int cellNum,
+			String data) {
+		String filePath = getExcelFilePath(fileName, key);
 
 		try {
 			File xlFile = new File(filePath);
@@ -89,9 +95,8 @@ public class ExcelUtils {
 		}
 	}
 
-	public static int getRowCount(String fileName, String sheetName) {
-		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
-		System.out.println("filePath" + filePath);
+	public static int getRowCount(String fileName, String key, String sheetName) {
+		String filePath = getExcelFilePath(fileName, key);
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
 			Sheet sheet = book.getSheet(sheetName);
@@ -126,9 +131,8 @@ public class ExcelUtils {
 		return count;
 	}
 
-	public static Set<String> getUniqueColumnData(String fileName, String sheetName, int columnNum) {
-		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
-		System.out.println("filePath" + filePath);
+	public static Set<String> getUniqueColumnData(String fileName, String key, String sheetName, int columnNum) {
+		String filePath = getExcelFilePath(fileName, key);
 		Set<String> data = new HashSet<>();
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
@@ -158,9 +162,8 @@ public class ExcelUtils {
 		return data;
 	}
 
-	public static List<String> getColumnData(String fileName, String sheetName, int columnNum) {
-		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
-		System.out.println("filePath" + filePath);
+	public static List<String> getColumnData(String fileName, String key, String sheetName, int columnNum) {
+		String filePath = getExcelFilePath(fileName, key);
 		List<String> data = new ArrayList<>();
 
 		try (FileInputStream fi = new FileInputStream(filePath); Workbook book = WorkbookFactory.create(fi)) {
@@ -188,9 +191,8 @@ public class ExcelUtils {
 		return data;
 	}
 
-	public static Object[][] getDataFromRowIndex(String fileName, String sheetName, int startRowIndex) {
-		String filePath = System.getProperty("user.dir") + TEST_DATA_PATH + fileName + ".xlsx";
-		System.out.println("filePath" + filePath);
+	public static Object[][] getDataFromRowIndex(String fileName, String key, String sheetName, int startRowIndex) {
+		String filePath = getExcelFilePath(fileName, key);
 		Object[][] data = null;
 		int dataRow = 0;
 

@@ -91,28 +91,29 @@ public class JobsSearchPageTest extends BaseTest {
 		// System.out.println(jobs.toString());
 	}
 
-	@Test(dependsOnMethods = "doSearchTest", groups="extractLastJobs")
+	@Test(dependsOnMethods = "doSearchTest", groups = "extractLastJobs")
 	public void TBDExcel() {
 		System.out.println("TBDExcel: " + getClass().getSimpleName());
-		int rowCount = ExcelUtils.getRowCount("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours");
-		Set<String> data = ExcelUtils.getUniqueColumnData("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours", 1);
+		int rowCount = ExcelUtils.getRowCount("config", "excel.path", "FinalJobs_Last24Hours");
+		Set<String> data = ExcelUtils.getUniqueColumnData("config", "excel.path",
+				"FinalJobs_Last24Hours", 1);
 
 		if (uniquejobs.size() != 0) {
-			ExcelUtils.setCellData("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours", rowCount, 0,
+			ExcelUtils.setCellData("config", "excel.path", "FinalJobs_Last24Hours", rowCount, 0,
 					"Last Hour Job Search Results");
 			for (JobData job : uniquejobs) {
 				String jobHeader = job.toString();
 				String jobLink = job.getJobLink();
 				if (data.add(jobLink)) {
-					ExcelUtils.setCellData("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours", rowCount + 1, 0,
-							jobHeader);
-					ExcelUtils.setCellData("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours", rowCount + 1, 1,
-							jobLink);
+					ExcelUtils.setCellData("config", "excel.path", "FinalJobs_Last24Hours",
+							rowCount + 1, 0, jobHeader);
+					ExcelUtils.setCellData("config", "excel.path", "FinalJobs_Last24Hours",
+							rowCount + 1, 1, jobLink);
 					rowCount++;
 				}
 			}
 		} else {
-			ExcelUtils.setCellData("DailyJobs_UpdatedHourly", "FinalJobs_Last24Hours", rowCount, 0,
+			ExcelUtils.setCellData("config", "excel.path", "FinalJobs_Last24Hours", rowCount, 0,
 					"No Jobs Found in the Last Hour");
 		}
 
